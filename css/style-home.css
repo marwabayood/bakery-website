@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+/* **************Navbar******************* */
+.navigationBar {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 60px;
+  padding-left: 25px;
+  overflow: hidden;
+  border: 1px solid whitesmoke;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navigationBar li {
+  float: right;
+}
+
+.navigationBar li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navigationBar li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.navigationBar li a.active {
+  border-top: 2px solid #8e7754;
+}
+
+/* ********************Header*************** */
+header {
+  background-image: url(../img/bg.jfif);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+header .heading {
+  font-weight: bold;
+  padding-top: 10%;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-transform: none;
+}
+header .title {
+  line-height: 91.2px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+  font-size: 76px;
+  font-weight: 400;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-align: center;
+  text-indent: 0px;
+}
+.heading p {
+  line-height: 44.64px;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  word-spacing: 0px;
+}
+.heading .btn1 {
+  color: #ffffff;
+  background-color: #8e7754;
+  font-size: 16px;
+  padding: 15px 28px;
+}
+.heading .btn2 {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 15px 28px;
+  border-color: #ffffff;
+}
+.heading .btn:hover{
+    background-color: #ffffff;
+    color: #080808;
+    font-weight: bold;
+}
+/* ****************section1************** */
+.sec1Paragh{
+    color: #666;
+    line-height: 1.6;
+}
+.sec1List{
+  list-style: none;
+  line-height: 200%;
+  color: #666;
+}
+.sec1List li {
+  margin-bottom: 5px;
+  line-height: 200%;
+}
+.sec1List li span{
+  border: 2px solid #dddddd;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 8px;
+  line-height: 44px;
+  font-size: 16px
+}
+.sec1List span i{
+  color: #8e7754;
+}
+
+/* **************section2******************** */
+.section2{
+  background-color: #f8f8f8;
+  color: #666;
+  line-height: 1.6;
+}
+/* ******************section3*************** */
+.section3 p{
+  color: #666;
+  line-height: 1.6;
+}
+/* ******************Section4***************** */
+.section4{
+  background-color: #f8f8f8;
+}
+.section4 p{
+  line-height: 200%;
+}
+.section4List{
+  list-style: none;
+  line-height: 2.6;
+}
+.section4List li span{
+  border: 2px solid #8e7754;
+  background-color: #8e7754;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+}
+.section4 iframe{
+  background-color: hsl(0, 0%, 63%);
+}
+/* *****************footer************ */
+footer{
+  background-color: #403d38;
+  color: #969696;
+  font-size: 16px;
+  line-height: 1.8;
+}
+footer h5{
+  color: #ffffff;
+}
+footer .footerList{
+  list-style: none;
+}
+footer .footerList li span{
+  margin: 5px;
+}
+/* *************** */
+.footerBotton{
+  background-color: #353330;
+  color: #969696;
+}
+.wrapper{
+  display: inline-flex;
+}
+.wrapper .icon{
+  margin: 0 5px;
+  cursor: pointer;
+}
+.wrapper .icon span{
+  height: 40px;
+  width: 40px;
+  display: block;
+  background: #484540;
+  border-radius: 50%;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+}
+.wrapper .icon span i{
+  font-size: 18px;
+  line-height: 40px;
+}
+.facebook:hover span{
+  background-color: #3B5998;
+  color: #ddd;
+}
+.google:hover span{
+  background-color: #db4a39;
+  color: #ddd;
+}
+.linked:hover span{
+  background-color: #0077b5;
+  color: #ddd;
+}
+.twitter:hover span{
+  background-color: #00acee;
+  color: #ddd;
+}
+
+
+/*****************||* button top up || ************/
+
+.to-top {
+	position: fixed;
+	bottom: 20px;
+	right: 32px;
+	width: 35px;
+  height: 35px;
+	font-size: 32px;
+	justify-content: center;
+	/* color: white; */
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	opacity: 0;
+	border-radius: 50%;
+	background: rgba(142, 119, 84,0.8);
+	transition: all 0.4s;
+	z-index: 10;
+}
+.to-top a i{
+  color: white;
+}
+.to-top.active {
+	bottom: 32px;
+	pointer-events: auto;
+	opacity: 1;
+}
